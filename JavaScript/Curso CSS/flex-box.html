@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="volver"><a href="index.html">Indice</a></div>
+
+    <h1>Flex- Box</h1>
+    <h2>TODAS LAS ETIQUETAS MENCIONADAS EN ESTA EXTENCION SON SOLO PARA LOS CONTENEDORES</h2>
+    <img src="flexBox.PNG" alt="">
+    <h1>ejemplos:</h1>
+    <br>
+    <h3>.container{ <br>display: flex</h3>
+    <div class="container1">
+        <div class="container1__div"></div>
+        <div class="container1__div"></div>
+        <div class="container1__div"></div>
+        <div class="container1__div"></div>
+        <div class="container1__div"></div>
+        <div class="container1__div"></div>
+    </div>
+    <h3>.container{ <br>display: flex <br> flex-direction: row; <br>===></h3>
+    <div class="container1row">
+        <div class="container1row__div orange"></div>
+        <div class="container1row__div"></div>
+        <div class="container1row__div"></div>
+        <div class="container1row__div"></div>
+        <div class="container1row__div"></div>
+        <div class="container1row__div green"></div>
+    </div>
+    <h3 id="izquierda">.container{ <br>display: flex <br> flex-direction: row-reverse; <br><===</h3>
+    <div class="container1rowReverse">
+        <div class="container1rowReverse__div orange"></div>
+        <div class="container1rowReverse__div"></div>
+        <div class="container1rowReverse__div"></div>
+        <div class="container1rowReverse__div"></div>
+        <div class="container1rowReverse__div"></div>
+        <div class="container1rowReverse__div green"></div>
+    </div>
+    <h3 >.container{ <br>display: flex <br> flex-direction: column; <br> </h3>
+
+    <div class="container1Column">
+        <div class="container1Column__div orange"></div>
+        <div class="container1Column__div"></div>
+        <div class="container1Column__div"></div>
+        <div class="container1Column__div"></div>
+        <div class="container1Column__div"></div>
+        <div class="container1Column__div green"></div>
+    </div>
+    <h3>.container{ <br>display: flex <br> flex-direction: column-reverse; <br> </h3>
+
+    <div class="container1ColumnR">
+        <div class="container1ColumnR__div orange"></div>
+        <div class="container1ColumnR__div"></div>
+        <div class="container1ColumnR__div"></div>
+        <div class="container1ColumnR__div"></div>
+        <div class="container1ColumnR__div"></div>
+        <div class="container1ColumnR__div green"></div>
+    </div>
+    <h1>Distribucion de cajas, para que se pongan una debajo de otra al reducir espacio</h1>
+    <h3>.container{ <br>display: flex <br> flex-wrap: wrap; <br></h3>
+        <br>
+    <h3>.container{ <br>display: flex <br> flex-wrap: wrap-reverse; <br> se van posicionando hacia arriva</h3>
+    
+        <h1>justify-content</h1>
+    <h3>.container{<br>display:flex; <br> justify-content: center; <br></h3>
+    <div class="container2">
+        <div class="container2__div orange"></div>
+        <div class="container2__div"></div>
+        <div class="container2__div"></div>
+        <div class="container2__div"></div>
+        <div class="container2__div"></div>
+        <div class="container2__div green"></div>
+    </div>
+    <h3>.container{<br>display:flex; <br> justify-content: space-around; <br></h3>
+
+    <div class="container2SpaceAround">
+        <div class="container2SpaceAround__div orange"></div>
+        <div class="container2SpaceAround__div"></div>
+        <div class="container2SpaceAround__div"></div>
+        <div class="container2SpaceAround__div"></div>
+        <div class="container2SpaceAround__div"></div>
+        <div class="container2SpaceAround__div green"></div>
+    </div>
+    <h3>.container{<br>display:flex; <br> justify-content: space-evenly; <br></h3>
+    <div class="container2spaceEvenly">
+        <div class="container2spaceEvenly__div orange"></div>
+        <div class="container2spaceEvenly__div"></div>
+        <div class="container2spaceEvenly__div"></div>
+        <div class="container2spaceEvenly__div"></div>
+        <div class="container2spaceEvenly__div"></div>
+        <div class="container2spaceEvenly__div green"></div>
+    </div>
+    <h3>.container{<br>display:flex; <br> justify-content: space-between; <br></h3>
+    <div class="container2SpaceBetween">
+        <div class="container2SpaceBetween__div orange"></div>
+        <div class="container2SpaceBetween__div"></div>
+        <div class="container2SpaceBetween__div"></div>
+        <div class="container2SpaceBetween__div"></div>
+        <div class="container2SpaceBetween__div"></div>
+        <div class="container2SpaceBetween__div green"></div>
+    </div>
+    <br>
+    <h1>align-items /align-content</h1>
+    <p>align-items: para una linea, align-content: para mas de una linea</p>
+    <p>:flex-start, :flex-end, :center, :stretch, :baseline</p>
+    <br>
+    <h3>.container{ <br>display: flex <br> align-items: flex-end/start</h3>
+    <div class="container3FlexEnd">
+        <div class="container3FlexEnd__div orange"></div>
+        <div class="container3FlexEnd__div"></div>
+        <div class="container3FlexEnd__div"></div>
+        <div class="container3FlexEnd__div"></div>
+        <div class="container3FlexEnd__div"></div>
+        <div class="container3FlexEnd__div green"></div>
+    </div>
+    <h3>.container{ <br>display: flex <br> align-items: center <br> centra el item verticalmente</h3>
+    <div class="container3Center">
+        <div class="container3Center__div orange"></div>
+        <div class="container3Center__div"></div>
+        <div class="container3Center__div"></div>
+        <div class="container3Center__div"></div>
+        <div class="container3Center__div"></div>
+        <div class="container3Center__div green"></div>
+    </div>
+
+</body>
+</html>

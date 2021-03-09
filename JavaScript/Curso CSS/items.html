@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="volver"><a href="index.html">Indice</a></div>
+    <H1>PROPIEDADES DE LOS ITEMS</H1>
+    <h2>    LAS ETIQUETAS MENCIONADAS SON PARA LOS ITEMS, NO PARA LOS CONTENEDORES (FLEX)</h2>
+    <br>
+    <p>width==>flex-basis</p>
+    <p>flex-shrink: espacio que sede</p>
+    <p>flex: grow, shrink, basis==shorter</p>
+    <br>
+    <p>order: ==> es como el z-index pero en el eje al que apunta el main axis</p>
+    <br>
+    <img src="items.PNG" alt="">
+    <h3>Ejemplo items sin propiedades</h3>
+        <div class="items1">
+            <div class="items1__div orange"></div>
+            <div class="items1__div"></div>
+            <div class="items1__div"></div>
+            <div class="items1__div green"></div>
+        </div>
+    <textarea  class="textarea" name="" id="" cols="30" rows="10">
+        ALINGN-SELF 
+
+        .green{
+           align-self: flexEnd; 
+           flex-grow: 1;
+
+        }
+    </textarea>
+
+        <div class="items2">
+            <div class="items2__div orange "></div>
+            <div class="items2__div"></div>
+            <div class="items2__div"></div>
+            <div class="items2__div green flexEnd">green</div>
+        </div>    
+        <textarea class="textarea" name="" id="" cols="30" rows="10">
+                FLEX-GROW
+                .items{
+                    flex-grow: 1;
+                }
+                    se reparten el espacio sobrante en 1, equitativamente
+            </textarea>
+        <div class="items3">
+            <div class="flexgrow items3__div orange"></div>
+            <div class="flexgrow items3__div"></div>
+            <div class="flexgrow items3__div"></div>
+            <div class="flexgrow items3__div green"></div>
+        </div>
+
+        <textarea class="textarea" name="" id="" cols="30" rows="10">
+                        ORDER
+                        .orange{
+                            order: 10;
+                        }
+                    </textarea>
+        <div class="items4">
+            <div class="flexgrow items4__div orange order">orange</div>
+            <div class="flexgrow items4__div"></div>
+            <div class="flexgrow items4__div"></div>
+            <div class="flexgrow items4__div green"></div>
+        </div>
+</body>
+</html>

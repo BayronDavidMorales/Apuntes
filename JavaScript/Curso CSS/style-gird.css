@@ -1,0 +1,168 @@
+body{
+    margin: 2em 10em;
+    border: 1px solid rgb(172, 172, 172);
+    font-family: sans-serif;
+    background: radial-gradient(circle, #fff, #bbb);
+    text-align: center;
+}
+nav{
+    background: radial-gradient(circle, #bbb, #fff);
+
+}
+nav:hover{
+    background: radial-gradient(circle, #fff, #bbb);
+
+}
+h1{
+    color: blue;
+    padding: 1em;
+    text-align: center;
+}
+img{
+    border: 1px solid gray;    
+}
+textarea{
+    margin-top: 2em;
+    width: 90%;
+    border: none;
+
+}
+.contenedor{
+    padding: 5px;
+}
+.container{
+    border: 3px solid black;
+    /* background: red; */
+}
+.prop{
+    padding: 5px;
+}
+.enlaces{
+    /* background: radial-gradient(circle, #bbb, #fff); */
+
+    border: 1px solid gray;
+    margin: 10px;
+}
+#agrandar{
+    width: 500px;
+}
+
+/* ------------------------------------------ */
+.ejemplo__div, .grid__div{
+    border: 1px solid gray;
+    
+}
+.grid1{
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+}
+.grid2{
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 40px 40px 40px;
+}
+.grid3{
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 40px 40px 40fr;
+}
+.grid4{
+    display: grid;
+    height: 400px;
+    grid-template-rows:    1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.item1{
+    grid-column: 1/3;
+    background-color: #bbb;
+}
+.item6{
+    grid-row: 2/5;
+    background-color: #bbb;
+}
+.auto{
+    grid-auto-rows: 1fr;
+}
+.auto-flow{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+}
+.dense{
+    grid-auto-flow: dense;
+}
+/* ----------------------------------------------------------------- */
+/* Dinamicas */
+.minmax{
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+
+}
+.autofillColumns{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+}
+.autofillRows{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+
+}
+/* ------------------------------------------------------------------- */
+/* alineacion */
+
+.subItems{
+    display: grid;
+    padding:3px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+}
+.nietos{
+    background-color: rgb(143, 142, 142);
+    }
+.center{
+    justify-items: center;
+
+}
+.start{
+    justify-items: start;
+}
+.end{
+    justify-items: end;
+}
+.vertical1{
+    align-items: center;
+}
+.vertical2{
+    align-items:start;
+}
+.vertical3{
+    align-items:end;
+}
+.selfStart{
+    justify-self: start;
+}
+.selfEnd{
+    justify-self: end;
+}
+.selfCenter{
+    justify-self: center;
+}
+.aselfStart{
+    align-self: start;
+}
+.aselfEnd{
+    align-self: end;
+}
+.aselfCenter{
+    align-self: center;
+}
+
+.selfContainer{
+    display: grid;
+    height: 400px;
+    grid-template-rows:    1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}

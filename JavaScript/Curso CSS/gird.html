@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-gird.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="volver"><a href="index.html">Indice</a></div>
+        </nav>
+    </header>
+    
+    <h1>GRID</h1>
+        <img src="gird.png"  alt="">
+        <h2> <a class="enlaces" href="#tipos">Grid impicito y explicito</a></h2>
+        <h2> <a class="enlaces" href="#dinamico">Grid dinamico</a></h2>
+        <h2><a class="enlaces" href="#alineacion">Alineacion</a></h2>
+
+    <div class="contenedor">
+        
+        <textarea name="" id="" cols="30" rows="10">
+            ejemplo inicial:
+
+            .items{
+                border: 1px solid gray;
+            }
+        </textarea>
+        <div class="ejemplo">
+            <div class="ejemplo__div">1</div>
+            <div class="ejemplo__div">2</div>
+            <div class="ejemplo__div">3</div>
+            <div class="ejemplo__div">4</div>
+            <div class="ejemplo__div">5</div>
+            <div class="ejemplo__div">6</div>
+            <div class="ejemplo__div">7</div>
+            <div class="ejemplo__div">8</div>
+            <div class="ejemplo__div">9</div>
+        </div>
+        <textarea name="" id="" cols="30" rows="10">
+                    ejemplo:
+        
+                    .container{
+                        display: grid;
+                        grid-template-rows: 40px 40px 40px; ==> repeat(3 40px);
+                    }
+                </textarea>
+        <div class="grid1 container prop">
+            <div class="grid__div">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10">
+                ejemplo:
+    
+                .container{
+                    display: grid;
+                    grid-template-rows: 40px 40px 40px;
+                    grid-template-columns: 40px 40px 40px;
+
+                }
+                        </textarea>
+        <div class="grid2 container prop">
+            <div class="grid__div">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10">
+                        ejemplo:
+            
+                        .container{
+                            display: grid;
+                            grid-template-rows: 40px 40px 40px;
+                            grid-template-columns: 40px 40px 40fr;
+                        }
+                        con fr las cajas se ajustan al espacio disponible
+                                </textarea>
+        <div class="grid3 container prop">
+            <div class="grid__div">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+        <!-- cubos -->
+        <textarea name="" id="" cols="30" rows="10">
+                    ejemplo:
+        
+                    .container{
+                        display: grid;
+                        height: 400px;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 10px;
+                    }
+                    ==> grid-column-gap: n px:
+                        grid-row-gap: n px;
+                                        </textarea>
+        <div class="grid4 container prop">
+            <div class="grid__div">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10">
+            ejemplo:
+
+            .container{
+                display: grid;
+                height: 400px;
+                grid-template-rows:    1fr 1fr 1fr; ==> repeat(3 1fr);
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
+            }
+            .item1{
+                grid-column: 1/3;
+                background-color: #bbb;
+            }
+            .item6{
+                background-color: #bbb;
+                grid-row: 2/5;
+            }
+            ==> grid-column-gap: n px:
+                grid-row-gap: n px;
+                                </textarea>
+        <P>grid-column: 1/ span 3; ===>arranca en 1 y ocupa 3 espacios mas, igual con las filas</P>
+        <div class="grid4 container prop">
+            <div class="grid__div item1">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div item6">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+        <h2>Para solucionar los problemas de los items 8 y 9 usamos las propiedades de<a class="enlaces" href="#tipos">Grid
+                impicito y explicito</a></h2>
+
+    </div>
+
+    
+    
+    <div id="tipos" class="contenedor">
+        <h1>GRID IMPLICITO Y EXPLICITO</h1>
+
+            <textarea name="" id="" cols="30" rows="10">
+                 ejemplo:
+    
+                 .container{
+                     display: grid;
+                     height: 400px;
+                     grid-template-rows:    1fr 1fr 1fr; ==> repeat(3 1fr);
+                     grid-auto-rows: 1fr; ************************************************
+                     grid-template-columns: 1fr 1fr 1fr;
+                     grid-gap: 10px;
+                 }
+                 .item1{
+                     grid-column: 1/3;
+                     background-color: #bbb;
+                 }
+                 .item6{
+                     background-color: #bbb;
+                     grid-row: 2/5;
+                 }
+                 ==> grid-column-gap: n px:
+                     grid-row-gap: n px;
+               </textarea>
+                <P>grid-auto-rows: 1fr; soluciona lo de las casillas que quedan desalineadas (8 y 9)</P>
+                <div class="grid4 container prop auto">
+                    <div class="grid__div item1">1</div>
+                    <div class="grid__div">2</div>
+                    <div class="grid__div">3</div>
+                    <div class="grid__div">4</div>
+                    <div class="grid__div">5</div>
+                    <div class="grid__div item6">6</div>
+                    <div class="grid__div">7</div>
+                    <div class="grid__div">8</div>
+                    <div class="grid__div">9</div>
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10">
+                 ejemplo:
+    
+                 .container{
+                     display: grid;
+                     height: 400px;
+                     grid-template-rows:    1fr 1fr 1fr; ==> repeat(3 1fr);
+                    grid-auto-columns: column; ********************************
+                    grid-auto-rows: 1fr;       ********************************
+                     grid-template-columns: 1fr 1fr 1fr;
+                     grid-gap: 10px;
+                 }
+                 .item1{
+                     grid-column: 1/3;
+                     background-color: #bbb;
+                 }
+                 .item6{
+                     background-color: #bbb;
+                     grid-row: 2/5;
+                 }
+                 ==> grid-column-gap: n px:
+                     grid-row-gap: n px;
+               </textarea>
+                <P>grid-auto-columns: column; ordena las casillas en columnas <br>
+                grid-auto-rows: 1fr; les da un tamaño </P>
+                <div class="grid4 container prop auto-flow">
+                    <div class="grid__div item1">1</div>
+                    <div class="grid__div">2</div>
+                    <div class="grid__div">3</div>
+                    <div class="grid__div">4</div>
+                    <div class="grid__div">5</div>
+                    <div class="grid__div item6">6</div>
+                    <div class="grid__div">7</div>
+                    <div class="grid__div">8</div>
+                    <div class="grid__div">9</div>
+                </div>
+
+                 <textarea name="" id="" cols="30" rows="10">
+                 ejemplo:
+    
+                 .container{
+                     display: grid;
+                     height: 400px;
+                     grid-template-rows:    1fr 1fr 1fr; ==> repeat(3 1fr);
+                     grid-auto-flow: dense;     ********************************
+                     grid-auto-rows: 1fr;       ********************************
+                     grid-template-columns: 1fr 1fr 1fr;
+                     grid-gap: 10px;
+                 }
+                 .item1{
+                     grid-column: 1/3;
+                     background-color: #bbb;
+                 }
+                 .item6{
+                     background-color: #bbb;
+                     grid-row: 2/5;
+                 }
+                 ==> grid-column-gap: n px:
+                     grid-row-gap: n px;
+               </textarea>
+                <P>grid-auto-flow: dense; ==>intenta llenar los espacios vacios</P>
+                <div class="grid4 container prop dense">
+                    <div class="grid__div item1">1</div>
+                    <div class="grid__div">2</div>
+                    <div class="grid__div">3</div>
+                    <div class="grid__div">4</div>
+                    <div class="grid__div">5</div>
+                    <div class="grid__div item6">6</div>
+                    <div class="grid__div">7</div>
+                    <div class="grid__div">8</div>
+                    <div class="grid__div">9</div>
+                    <div class="grid__div">10</div>
+                </div>
+
+    </div>
+
+    <div class="contenedor" id="dinamico">
+        <h1>GRID DINAMICO</h1>
+            <p>los cambios se veran al cambiar el tamaño de la pantalla</p>
+            <img id="agrandar" src="gridDinamico.PNG" alt="">
+
+        <textarea name="" id="" cols="30" rows="10">
+            ejemplo:
+
+            .container{
+                display: grid;
+                height: 400px;
+                grid-template-rows:    1fr 1fr 1fr; ==> repeat(3 1fr);
+                grid-template-columns: repeat(3, minmax(100px, 1fr));********************************
+                grid-gap: 10px;
+            }
+            .item1{
+                grid-column: 1/3;
+                background-color: #bbb;
+            }
+            .item6{
+                background-color: #bbb;
+                grid-row: 2/5;
+            }
+            ==> grid-column-gap: n px:
+                grid-row-gap: n px;
+                                </textarea>
+        <P>grid-template-columns: repeat(3, minmax(100px, 1fr));===> estable un minimo y maximo </P>
+       
+        <div class="grid4 container prop minmax">
+            
+            <div class="grid__div item1">1</div>
+            <div class="grid__div">2 <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ad beatae, iste illum
+                autem consequuntur rerum suscipit veniam! Consequatur dignissimos inventore voluptate, ab perferendis veniam non
+                alias repellendus dolor nostrum?</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div item6">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10">
+          ejemplo:
+          .container{
+              display: grid;
+              height: 400px;
+              grid-template-rows: 1fr 1fr 1fr;
+              grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));****
+              grid-gap: 10px;
+          }
+        </textarea>
+    
+            <p> grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); genera columnas </p>
+        <div class="grid4 container prop autofillColumns">
+            <div class="grid__div">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+        </div>
+        <textarea name="" id="" cols="30" rows="10">
+          ejemplo:
+          .container{
+              display: grid;
+              height: 400px;
+              grid-template-rows: 1fr 1fr 1fr;
+              grid-template-rows: repeat(auto-fiT, minmax(100px, 1fr));****
+              grid-gap: 10px;
+            }
+        </textarea>
+    
+            <p> grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); Escala los elementos con respecto al espacio </p>
+        <div class="grid4 container prop autofit">
+            <div class="grid__div">1</div>
+            <div class="grid__div">2</div>
+            <div class="grid__div">3</div>
+            <div class="grid__div">4</div>
+            <div class="grid__div">5</div>
+            <div class="grid__div">6</div>
+            <div class="grid__div">7</div>
+            <div class="grid__div">8</div>
+            <div class="grid__div">9</div>
+          
+        </div>
+
+
+
+        
+
+    </div>
+
+    <div class="contenedor" id="alineacion">
+            <h1>Alineacion</h1>
+            <h2>align==> eje Y <br> justify==> eje X</h2>
+
+                <textarea name="" id="" cols="30" rows="10">
+                    ejemplo:
+        
+                    .container{
+                        display: grid;
+                        height: 400px;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 10px;
+                        justify-items: ----------;
+
+                    }
+                    ==> grid-column-gap: n px:
+                        grid-row-gap: n px;
+                </textarea>
+                <h2>justify-items:/align-items: space-evelnly==> espacios equitativos entre cajas</h2>
+        <div class="grid4 container prop">
+            <div class="grid__div subItems center">
+                <div class="grid__div nietos">justify-items: center;</div>
+                <div class="grid__div nietos">justify-items: center;</div>
+            </div>
+            <div class="grid__div subItems start">
+                <div class="grid__div nietos">justify-items : start;</div>
+                <div class="grid__div nietos">justify-items : start;</div>
+            </div>
+            <div class="grid__div subItems end">
+                <div class="grid__div nietos"> justify-items :  end;</div>
+                <div class="grid__div nietos"> justify-items :  end;</div>
+            </div>
+            <div class="grid__div subItems center vertical1">
+                <div class="grid__div nietos"> align-items: center;</div>
+                <div class="grid__div nietos"> justify-items: center;</div>
+            </div>
+            <div class="grid__div subItems start vertical2">
+                <div class="grid__div nietos"> align-items:   start</div>
+                <div class="grid__div nietos"> justify-items: start</div>
+            </div>
+            <div class="grid__div subItems end vertical3">
+                <div class="grid__div nietos"> align-items:   end</div>
+                <div class="grid__div nietos"> justify-items: end</div>
+            </div>
+            <div class="grid__div subItems start vertical1">
+                <div class="grid__div nietos"> align-items: start</div>
+                <div class="grid__div nietos"> justify-items: center</div>
+            </div>
+            <div class="grid__div subItems end vertical1">
+                <div class="grid__div nietos"> align-items:   end</div>
+                <div class="grid__div nietos"> justify-items: center</div>
+            </div>
+            <div class="grid__div subItems start vertical3">
+                <div class="grid__div nietos"> align-items: start</div>
+                <div class="grid__div nietos"> justify-items: end</div>
+            </div>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10">
+                            justify-self: *****
+                            align-self: *****
+
+                            metodo abreviado: place-self: **** ****
+                            
+                            .container{
+                                display: grid;
+                                height: 400px;
+                                grid-template-rows: 1fr 1fr 1fr;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                grid-gap: 10px;
+                            }
+
+                    </textarea>
+        <div class="grid4 container selfContainer">
+            <div class="grid__div selfStart">justify-self: start</div>
+            <div class="grid__div selfCenter">justify-self: center</div>
+            <div class="grid__div selfEnd">justify-self: end</div>
+            <div class="grid__div aselfStart">align-self start:</div>
+            <div class="grid__div aselfCenter">align-self: center</div>
+            <div class="grid__div aselfEnd">align-self: end</div>
+        </div>
+
+    </div>
+
+
+    <h1>FIN DEL COMUNICADO</h1>
+</body>
+</html>

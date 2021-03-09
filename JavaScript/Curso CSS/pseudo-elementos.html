@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="volver"><a href="index.html">Indice</a></div>
+    <h1>Pseudo-Elementos</h1>
+    <p>Generan cambios visuales que no afectan al DOM</p>
+    <h3>OJO!! NO FUNCIONA EN INLINE</h3>
+    <li>.clase(texto)::first-line{}=> permite hacer cambios a la primera linea de un texto de forma dinamica</li>
+    <li>.clase(texto)::firsl-letter{}=> lo mismo pero con la primera letra</li>
+    <li>.clase(texto)::selection{}=> permite modificar las propiedades visuales de la seleccion de texto</li>
+    <li>.clase(input)::playholder{}: es como un hint al que se la dan propiedades que se borran al momento de escribir, solo para INPUTS</li>
+    <br>
+    <h3>after & before</h3>
+    <br>
+    <li>.clase::before{}: añade algo antes de... por medio de content:'';</li>
+    <li>.clase::after{}: añade algo despues de... por medio de content:'';</li>
+    <br>
+    <h1>Pseudo-Clases</h1>
+    <li>.clase(tipo a):link{}: podemos modificar los enlaces a los que no se ha accedido</li>
+    <li>.clase(tipo a):visited{}: podemos modificar los enlaces accedidos</li>
+    <div class="containerPseudoClases">
+        <div class="containerPseudoClases__hover">.clase:hover{}
+        </div>
+        <div class="containerPseudoClases__active">.clase:active{}  <p>hacer click</p></div>
+        <div class=""><input type="text" class="containerPseudoClases__focus" value=".clase(input):focus{} se activa cuando se esta dentro"> </div>
+    </div>
+</body>
+</html> 
